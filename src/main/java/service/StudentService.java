@@ -11,12 +11,17 @@ public class StudentService {
       StudentService ss= new StudentService();
       ss.addStudent();
       ss.getStudents();
+      List<Student> students = ss.getStudents();
+      for(Student student : students)
+      {
+          System.out.println(student);
+      }
     }
 
     public void addStudent(){
         Student student = new Student();
         List<Student> studentList = new ArrayList<Student>();
-        student.setStudentId("001");
+        student.setStudentId("001")pull;
         student.setName("name");
         student.setCourse("MCA");
         student.setStartDate("01/08/2023");
